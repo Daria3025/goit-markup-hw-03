@@ -190,6 +190,10 @@ ul {
 
 /* -----------------------ACTIVITY-------------------------- */
 
+.about {
+    padding-bottom: 120px;
+}
+
 .activity-title {
     font-size: 36px;
     line-height: 1.11;
@@ -258,7 +262,6 @@ ul {
 /* -----------------------FOOTER-------------------------- */
 
 .footer {
-
     padding: 100px 0;
 }
 
