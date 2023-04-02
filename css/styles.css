@@ -28,6 +28,10 @@ ul {
     padding-left: 0;
 }
 
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
 }
@@ -41,15 +45,16 @@ ul {
 }
 
 .container {
-    padding: 0 156px 0 156px;
-    width: 1440px;
+    width: 1158px;
+    padding: 0 15px 0 15px;
     margin: 0 auto;
+    outline: 2px solid red;
 }
 
 
 /* -----------------------HEADER-------------------------- */
 
-.header {
+.header-container {
     display: flex;
     padding: 24px 0;
     border-bottom: 1px solid #E7E9FC;
@@ -124,15 +129,14 @@ ul {
 
 .hero {
     background-color: var(--background-color-dark);
+}
+
+.hero-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 48px;
     padding: 188px 0;
-}
-
-.hero-container {
-    background-color: var(--background-color-dark);
 }
 
 .hero-title {
@@ -153,7 +157,9 @@ ul {
     color: #FFFFFF;
     background-color: #4D5AE5;
     padding-bottom: 188px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border-color: transparent;
     padding: 16px 32px;
 }
 
@@ -212,11 +218,9 @@ ul {
 
 .team {
     padding: 120px 0;
-}
-
-.team-container {
     background-color: #F4F4FD;
 }
+
 
 .team-title {
     font-size: 36px;
@@ -230,15 +234,18 @@ ul {
 
 .team-list {
     display: flex;
+    gap: 24px
+}
+
+.employee-container {
+    background-color: #FFFFFF;
 }
 
 .team-item {
-    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: calc((100%-72px)/4);
-    background-color: #F4F4FD;
+
 }
 
 .team-subtitle {
@@ -262,6 +269,7 @@ ul {
 
 .footer {
     padding: 100px 0;
+    background-color: var(--background-color-dark);
 }
 
 .footer-logo-link {
@@ -308,6 +316,7 @@ ul {
     background-color: #F4F4FD;
     border: 1px solid #E7E9FC;
     padding: 12px 24px;
+    border-radius: 4px;
 }
 .buttons-list {
     display: flex;
@@ -331,10 +340,13 @@ ul {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .projects-item {
-    flex-basis: calc((100%-48px)/3);
+    /* flex-basis: calc((100%-48px)/3); */
+    border: 1px solid #E7E9FC;
+    max-width: 360px;
 }
 
 .projects-item:nth-child(-n+6) {
@@ -348,10 +360,18 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-color-title);
+    margin-top: 32px;
 }
 .portfolio-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin: 8px 0 32px;
+
+}
+
+.portfolio-link {
+    display: flex;
+    flex-direction: column;
 }
