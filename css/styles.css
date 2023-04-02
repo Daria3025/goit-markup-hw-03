@@ -191,9 +191,6 @@ ul {
 
 /* -----------------------ACTIVITY-------------------------- */
 
-.about {
-    padding-bottom: 120px;
-}
 
 .activity-title {
     font-size: 36px;
@@ -208,6 +205,7 @@ ul {
     display: flex;
     justify-content: space-between;
     margin-top: 72px;
+    padding-bottom: 120px;
 }
 
 /* -----------------------TEAM-------------------------- */
