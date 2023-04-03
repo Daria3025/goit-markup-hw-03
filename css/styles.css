@@ -53,10 +53,13 @@ img {
 
 /* -----------------------HEADER-------------------------- */
 
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .header-container {
     display: flex;
     padding: 24px 0;
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-navigation {
@@ -324,7 +327,8 @@ img {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding: 96px 0 72px;
+    padding-top: 96px;
+    margin-bottom: 72px;
 }
 
 .portfolio-btn:hover,
